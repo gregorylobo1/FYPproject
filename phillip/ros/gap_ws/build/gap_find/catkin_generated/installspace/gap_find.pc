@@ -1,0 +1,8 @@
+prefix=/home/phillip/ros/gap_ws/install
+
+Name: gap_find
+Description: Description of gap_find
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/phillip/ros/gap_ws/install/lib 
+Requires: 

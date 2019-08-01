@@ -1,0 +1,2 @@
+gap_find
+-DCATKIN_DEVEL_PREFIX=/home/phillip/ros/gap_ws/devel -DCMAKE_INSTALL_PREFIX=/home/phillip/ros/gap_ws/install -G Unix Makefiles

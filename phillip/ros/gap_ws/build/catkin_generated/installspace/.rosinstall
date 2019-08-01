@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/phillip/ros/gap_ws/install/setup.sh

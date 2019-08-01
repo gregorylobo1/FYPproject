@@ -1,0 +1,2 @@
+lscan2pointcloud
+-DCATKIN_DEVEL_PREFIX=/home/phillip/ros/scan_ws/devel -DCMAKE_INSTALL_PREFIX=/home/phillip/ros/scan_ws/install -G Unix Makefiles

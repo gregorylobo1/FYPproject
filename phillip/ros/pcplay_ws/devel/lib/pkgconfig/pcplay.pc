@@ -1,0 +1,8 @@
+prefix=/home/phillip/ros/pcplay_ws/devel
+
+Name: pcplay
+Description: Description of pcplay
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/phillip/ros/pcplay_ws/devel/lib 
+Requires: 

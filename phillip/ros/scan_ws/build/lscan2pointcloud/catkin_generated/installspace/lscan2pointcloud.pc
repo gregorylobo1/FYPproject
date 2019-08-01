@@ -1,0 +1,8 @@
+prefix=/home/phillip/ros/scan_ws/install
+
+Name: lscan2pointcloud
+Description: Description of lscan2pointcloud
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/phillip/ros/scan_ws/install/lib 
+Requires: 

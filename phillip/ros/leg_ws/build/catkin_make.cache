@@ -1,0 +1,2 @@
+leg_find
+-DCATKIN_DEVEL_PREFIX=/home/phillip/ros/leg_ws/devel -DCMAKE_INSTALL_PREFIX=/home/phillip/ros/leg_ws/install -G Unix Makefiles
