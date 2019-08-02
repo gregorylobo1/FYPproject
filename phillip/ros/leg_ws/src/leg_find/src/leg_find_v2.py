@@ -2,7 +2,7 @@
 # attempts to subscribe and print data from the pointcloud data
 '''
 leg finding script - version 2
-last editted on 01/08/2019
+last editted on 02/08/2019
 by Phillip Luu
 '''
 import rospy
@@ -18,6 +18,9 @@ global prev_z
 radius = 0.55                # swing diameter of 52 cm, with tolerancing of +3cm
 rmin = 0.040
 rmax = 2.5
+prev_x = 0
+prev_y = 0
+prev_z = 0
 
 rospy.init_node('leg_find')
 
@@ -91,7 +94,7 @@ def read_cb(data):
                 if depth_min < (new_scan[temp_i] - new_scan[mid]) < depth_max and depth_min < (new_scan[temp_f] - new_scan[mid]) < depth_max:
                     ini_angle = round(180/math.pi*(angle[temp_i]),3)
                     fin_angle = round(180/math.pi*(angle[temp_f]),3)
-                    leg.append([angle[mid],new_scan[mid])
+                    leg.append([angle[mid],new_scan[mid]])
                     print('Leg between {:f} and {:f}'.format(ini_angle, fin_angle))
         if clear_flag == 1:
             temp_i = 0
@@ -120,7 +123,7 @@ def read_cb(data):
             x_leg = (leg[0][1] + leg[1][1])/2 * math.cos((leg[0][0]+leg[1][0])/2)
             y_leg = (leg[0][1] + leg[1][1])/2 * math.sin((leg[0][0]+leg[1][0])/2)
             z_leg = 1
-        elif if abs(leg[0][0]) < abs(leg[1][0]):
+        elif abs(leg[0][0]) < abs(leg[1][0]):
             x_leg = leg[0][1] * math.cos(leg[0][0])
             y_leg = leg[0][1] * math.sin(leg[0][0])
             z_leg = 1
